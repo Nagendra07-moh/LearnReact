@@ -1,10 +1,21 @@
 import './video.css'
+
+//ABOUT PROPS=>
 // props are always being in form of objects...
-function Video(porps){
+// These days we use props in  a destructured way
+function Video({title,channel,views,time}){
     return( 
-        <div>
+        <div className='cointaner'>
+            <div className='pic'>
             <img className="Img" src="https://picsum.photos/seed/picsum/400/300" alt="Error"></img>
-            <h2>`Hey There!! This is {porps.title} video component!`</h2>
+            </div>
+            <div className='title'>{title}</div>
+            <div className='channel'>{channel}</div>
+            <div className='views'>
+            {views} views <span>.</span> {time}
+            </div>
+
+            
         </div>
     )
 }
