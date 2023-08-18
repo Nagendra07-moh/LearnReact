@@ -1,7 +1,12 @@
-function playButton(){
-    return (
-        <button onClick={console.log("Play Btn has been pressed")}>Play</button>
-    )
+import React from 'react'
+
+const playBtn = () => {
+  return (
+    <div>
+        <h1>Hello nagendra</h1>
+      <button onClick={console.log("this is button pressed!!")}>Press</button>
+    </div>
+  )
 }
 
-export default playButton;
+export default playBtn;
