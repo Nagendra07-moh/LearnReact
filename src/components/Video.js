@@ -16,7 +16,7 @@ function Video({title,channel,views,time,verified}){
             {/* //this is the best practice for using the conditional rendering  */}
             {/* {verified ? <div className='channel'>{channel} {verified ? ✅ :null}</div> :<div className='channel'>{channel}</div>}   */}
 
-             <div className='channel'>{channel} {verified ? "✅" :null}</div>  
+             <div className='channel'>{channel} {verified && "✅" } </div>  
 
             <div className='views'>{views} views.<span></span> {time}</div>
 
