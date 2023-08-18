@@ -19,18 +19,19 @@
     font-weight: bold;
     margin-bottom: 1em;
 }
-.channel,.view{
-    font-size: small;
-    color:#ccc;
-    margin-bottom:0.2em;
-    margin-left: 10rem;
-}
+
 
 .views span{
   
     padding: 0 0.5em;
 }
 .views{
-    margin-left: 3rem;
+    margin-left: 2.5rem;
+}
+
+.channel{
+    font-weight: 500;
+    margin-left:2.5rem;
+    margin-bottom: 0.5rem;
 }
     
