@@ -1,6 +1,6 @@
 import React from 'react'
 
-const playBtn = () => {
+export default function playBtn () {
   return (
     <div>
         <h1>Hello nagendra</h1>
@@ -9,4 +9,4 @@ const playBtn = () => {
   )
 }
 
-export default playBtn;
+//  playBtn;

@@ -2,7 +2,6 @@
 import Video from "./components/Video";
 import './App.css'
 import data   from "./data/data"
-import playBtn from './components/playBtn'
 
 
 
@@ -21,7 +20,7 @@ function App(){
         verified= {i.verified}
         ></Video>)
     }
-      {<playBtn/>}
+      {<playBtn />}
     </div>
 
     );
