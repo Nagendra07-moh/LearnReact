@@ -1,6 +1,7 @@
 import Video from "./components/Video";
 import './App.css'
-import data from "./data/data"
+import playButton from "./components/playBtn" 
+import data   from "./data/data"
 
 function App(){
 
@@ -17,6 +18,7 @@ function App(){
         verified= {i.verified}
         ></Video>)
     }
+    <playButton></playButton>
     </div>
     // <>
     //  <Video title = "This is First" channel="PG-1" views="10k"  time="13:34 AM" verified ={true}></Video>
