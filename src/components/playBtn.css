@@ -1,13 +1,13 @@
 button{
     background-color: black;
     border: 1px solid yellow ;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     color:white;
     cursor: pointer;
     width:40%;
-    margin-right:2rem;
-    margin-left: 25rem;
+    /* margin-right:2rem; */
+    margin-left: 5rem;
 
 }
 

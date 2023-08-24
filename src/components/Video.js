@@ -3,7 +3,7 @@ import './video.css'
 //ABOUT PROPS=>
 // props are always being in form of objects...
 // These days we use props in  a destructured way
-function Video({title,channel,views,time,verified}){
+function Video({title,channel,views,time,verified,children}){
 
     return( 
         <div className='cointaner'>
@@ -19,6 +19,8 @@ function Video({title,channel,views,time,verified}){
              <div className='channel'>{channel} {verified && "✅" } </div>  
 
             <div className='views'>{views} views.<span></span> {time}</div>
+            {children}
+
 
             
         </div>

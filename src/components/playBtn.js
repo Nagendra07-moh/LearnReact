@@ -1,19 +1,21 @@
 import './playBtn.css'
-import {useState} from 'react'
-function PlayButton({message,children,onClick}){
-    // let count = 0;
-    const [count, setcount] = useState(0);
-    function callFunc(){
-        onClick();
+// import {useState} from 'react'
+function PlayButton({message,children,onPlay,onPause}){
+    let Playing  = false;
+    function handleClick(){
+        if(Playing){
+            onPause();
+            Playing = 1 - Playing;
+        }else{
+            onPlay();
+            Playing = 1 - Playing;
+
+        }
+
     }
+        
     return(
-        <button  onClick={()=> {
-            console.log(message)
-            // eslint-disable-next-line no-const-assign
-            setcount(count+1);
-            console.log(count);
-            callFunc();
-        }}>{children} {count} {callFunc}</button>
+        <button onClick={handleClick}>{children} : {Playing?'>':'||'}</button>
     )
 
 }

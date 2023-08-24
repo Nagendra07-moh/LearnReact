@@ -20,11 +20,15 @@ function App(){
         views= {i.views} 
         time = {i.time}
         verified= {i.verified}
-        ></Video>)
+        >
+      <PlayButton message="Hey There!! play button has been triggered" onPlay={()=>console.log("This is play!!")} onPause = {()=>console.log("this is pause!!")}>PlayButton</PlayButton>
+
+        </Video>)
       }
       <div>
-      <PlayButton message = "Play the music!!" onSmash={()=> console.log("play cons")}>Play</PlayButton>
-      {/* <PlayButton message = "pause the music!!" onSmash={()=>alert.log('pause aler')}>Pause</PlayButton> */}
+      {/* <PlayButton message="Hey There!! play button has been triggered" onPlay={()=>console.log("This is play!!")} onPause = {()=>console.log("this is pause!!")}>PlayButton</PlayButton> */}
+      {/* <PlayButton message="Hey There!! Pause button has been triggered" onClick={()=>alert("This is customEvents for pause")}>PauseButton</PlayButton> */}
+      
 
       </div>
 
