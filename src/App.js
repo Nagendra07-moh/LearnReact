@@ -1,7 +1,9 @@
-/* eslint-disable no-unused-vars */
+
 import Video from "./components/Video";
 import './App.css'
 import data   from "./data/data"
+import PlayButton from "./components/playBtn";
+
 
 
 
@@ -19,9 +21,15 @@ function App(){
         time = {i.time}
         verified= {i.verified}
         ></Video>)
-    }
-      {<playBtn />}
+      }
+      <div>
+      <PlayButton message = "Play the music!!" onSmash={()=> console.log("play cons")}>Play</PlayButton>
+      {/* <PlayButton message = "pause the music!!" onSmash={()=>alert.log('pause aler')}>Pause</PlayButton> */}
+
+      </div>
+
     </div>
+
 
     );
 
